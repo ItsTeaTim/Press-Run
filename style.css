@@ -1,0 +1,171 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #bbd8f7;
+  color: #0F172A;
+}
+
+/* Layout */
+.app {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Screens */
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Card */
+.card {
+  background: #FFFFFF;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Titles */
+h1 {
+  color: #1E3A8A;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.subtitle {
+  color: #64748B;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: #1E3A8A;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #3B82F6;
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.score-box, .streak-box {
+  background: #FFFFFF;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.score-box h2, .streak-box h2 {
+  color: #3B82F6;
+}
+
+/* Progress Line */
+.progress-line {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.progress-line-box {
+  background: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.stage-marker {
+  text-align: center;
+  width: 100px;
+}
+
+.stage-dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #3B82F6;
+  border-radius: 50%;
+  margin: 0 auto 6px;
+}
+
+/* Paper Icon */
+#paper-icon {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  transition: left 0.4s ease;
+
+  font-size: 20px;
+
+  background: #3B82F6;   /* your accent blue */
+  color: white;
+
+  padding: 8px;
+  border-radius: 50%;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Question Section */
+.question-section {
+  margin-top: 20px;
+}
+
+#question-text {
+  margin: 15px 0;
+}
+
+/* Answer Buttons */
+.answer-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.answer-buttons button {
+  background-color: #3B82F6;
+}
+
+.answer-buttons button:hover {
+  background-color: #1E3A8A;
+}
+
+/* Feedback */
+.feedback-card h2 {
+  margin-bottom: 10px;
+}
+
+#points-earned {
+  margin: 10px 0;
+  font-weight: bold;
+}

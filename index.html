@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Press Run</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+
+    <!-- Start Screen -->
+    <section id="start-screen" class="screen active">
+      <div class="card">
+        <h1>Press Run</h1>
+        <p class="subtitle">Guide your print job through the offset printing process and aim for a perfect score.</p>
+        <button id="start-button">Start Print Job</button>
+      </div>
+    </section>
+
+    <!-- Game Screen -->
+    <section id="game-screen" class="screen hidden">
+      <header class="top-bar">
+        <div class="score-box">
+          <p>Score</p>
+          <h2 id="score">0</h2>
+        </div>
+
+        <div class="streak-box">
+          <p>Streak</p>
+          <h2 id="streak">0</h2>
+        </div>
+      </header>
+
+      <!-- Progress Line / Stages -->
+      <section class="progress-section">
+        <div class="progress-line-box">
+          <div class="progress-line">
+            <div id="paper-icon">📄</div>
+
+            <div class="stage-marker" data-stage="0">
+              <span class="stage-dot"></span>
+              <p>File Setup</p>
+            </div>
+
+            <div class="stage-marker" data-stage="1">
+              <span class="stage-dot"></span>
+              <p>Prepress</p>
+            </div>
+
+            <div class="stage-marker" data-stage="2">
+              <span class="stage-dot"></span>
+              <p>Plate Making</p>
+            </div>
+
+            <div class="stage-marker" data-stage="3">
+              <span class="stage-dot"></span>
+              <p>Ink Setup</p>
+            </div>
+
+            <div class="stage-marker" data-stage="4">
+              <span class="stage-dot"></span>
+              <p>Offset Press</p>
+            </div>
+
+            <div class="stage-marker" data-stage="5">
+              <span class="stage-dot"></span>
+              <p>Finishing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question Card -->
+      <section class="question-section">
+        <div class="card">
+          <p id="stage-label">Stage 1: File Setup</p>
+          <h2 id="question-text">Question goes here</h2>
+
+          <div id="answer-buttons" class="answer-buttons">
+            <!-- JS will insert answer buttons here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Area -->
+      <section id="feedback-section" class="hidden">
+        <div class="card feedback-card">
+          <h2 id="feedback-title">Correct!</h2>
+          <p id="feedback-text">Explanation goes here.</p>
+          <p id="points-earned">+100 points</p>
+          <button id="next-button">Next Stage</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="results-screen" class="screen hidden">
+      <div class="card">
+        <h1 id="result-title">Perfect Print!</h1>
+        <p id="final-score-text">Final Score: 0</p>
+        <p id="final-message">You guided the print job successfully from setup to finishing.</p>
+        <button id="restart-button">Run Again</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
