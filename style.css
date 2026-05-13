@@ -1,7 +1,7 @@
 /* Reset */
-* {
+* * {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -168,4 +168,60 @@ button:hover {
 #points-earned {
   margin: 10px 0;
   font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .top-bar {
+    gap: 10px;
+  }
+
+  .score-box,
+  .streak-box {
+    flex: 1;
+  }
+
+  .progress-line-box {
+    padding: 16px 10px;
+    overflow-x: auto;
+  }
+
+  .progress-line {
+    min-width: 650px;
+    margin: 30px 0;
+  }
+
+  .stage-marker {
+    width: 90px;
+    font-size: 12px;
+  }
+
+  #paper-icon {
+    top: -28px;
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .answer-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #question-text {
+    font-size: 1.25rem;
+  }
 }
