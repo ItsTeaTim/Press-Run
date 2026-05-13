@@ -1,5 +1,5 @@
 /* Reset */
-* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -189,24 +189,34 @@ button:hover {
   }
 
   .progress-line-box {
-    padding: 16px 10px;
-    overflow-x: auto;
+    padding: 16px 8px;
+    overflow: visible;
   }
 
   .progress-line {
-    min-width: 650px;
-    margin: 30px 0;
+    width: 100%;
+    min-width: 0;
+    margin: 35px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: start;
   }
 
   .stage-marker {
-    width: 90px;
-    font-size: 12px;
+    width: auto;
+    font-size: 10px;
+    padding: 0 2px;
+  }
+
+  .stage-dot {
+    width: 10px;
+    height: 10px;
   }
 
   #paper-icon {
-    top: -28px;
-    font-size: 16px;
-    padding: 6px;
+    top: -30px;
+    font-size: 14px;
+    padding: 5px;
   }
 
   .answer-buttons {
